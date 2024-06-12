@@ -1,0 +1,17 @@
+<html>
+    {% load static %}
+    <head>
+        <title>Health-Record</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/png">
+    </head>
+    <body>
+        <nav>
+          <div> EHR Admin Panel</div>  
+        </nav>
+        <center>
+        {% block content %}
+        {% endblock %}
+       </center>
+    </body>
+</html>
